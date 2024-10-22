@@ -3,22 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="This is module 1 assignment">
-    <link rel="icon" type="image/x-icon" href="assets/beluga-icon.jpg">
-    <title>Nurlianto-Aldi - Module 1 assignment</title>
+    <meta description="Jaeger Premium Care - Maintenance Services of Jaegers">
+    <link rel="icon" type="image/x-icon" href="assets/jaeger-logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Jaeger Premium Care</title>
 </head>
 <body>
 
     <header>
         <!-- navigation section -->
-        <nav>
+        <nav class="nav-bar">
             <div>
-                <img src="assets/beluga-icon.jpg" alt="logo" width="100px">
+                <img src="assets/jaeger-logo.png" alt="logo" width="100px">
             </div>
             <ul>
-                <li>Home</li>
-                <li>Contact</li>
-                <li>About</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">services</a></li>
+                <li><a href="">contact</a></li>
             </ul>
         </nav>
         <!-- end of navigation section -->
@@ -26,71 +27,98 @@
 
 
     <main>
-        <!-- description section -->
-        <section>
-            This web was created to fulfill the assignment from "module 1 assignment"
+        <!-- Banner Section -->
+        <section id="banner">
+            <h1>Jaeger Premium Care</h1>
+            <p>You're already worn out battling the Kaiju, don't even bother with the big steel armor.</p>
+            <button class="contact-us">contact us</button>
         </section>
-        <!-- end of description section -->
+        <!-- End of Banner Section -->
+
+        <!-- Description Section -->
+        <section id="serv-desc">
+            Sip a lemonade, grab a snack. Let the profesionnals handle your Jaegers.
+        </section>
+        <!-- End of Description Section -->
+
+        <!-- Services Card Section -->
+        <section>
+            <div>
+                <div>
+                    <img src="" alt="Tune Up for Jaegers">
+                </div>
+                <h1>🔥Tune Up!🔥</h1>
+                <p>Let us make that rocket shoot to its maximum potentials!</p>
+                <a href="">view services</a>
+            </div>
+
+            <div>
+                <div>
+                    <img src="" alt="Bling bling Jaegers">
+                </div>
+                <h1>✨Bling Bling✨</h1>
+                <p>Gotta give a punch with a style, right?</p>
+                <a href="">view services</a>
+            </div>
+        </section>
+        <!-- End of Services Card Section -->
+
+        <!-- Services Section -->
+        <section>
+            <div>
+                <img src="" alt="Anti-Godzilla">
+            </div>
+            <div>
+                <h1>Anti-Godzilla</h1>
+                <p>We'll make sure your Jaegers will be Godzilla-proof! Even the deathly "akhhhhhh" won't even scratch your Jaegers</p>
+                <button>contact us</button>
+            </div>
+
+            <div>
+                <img src="" alt="Anti-Kaiju">
+            </div>
+            <div>
+                <h1>Anti-Kaiju</h1>
+                <p>If Godzilla nothing to you, then Kaiju is nothing to worry about.</p>
+                <button>contact us</button>
+            </div>
+
+            <div>
+                <img src="" alt="as strong as Gucci">
+            </div>
+            <div>
+                <h1>Battling With Blingbling</h1>
+                <p>"You can't hurt me, this armor is Gucci" as  Hakusho said. Yes, we collaborate with Gucci.</p>
+                <button>contact us</button>
+            </div>
+        </section>
+
+        <section>
+                <blockquote>
+                    "The only team i trust to keep my Jaeger ready for battle. Quick, efficient, and no question asked."
+                </blockquote>
+                <cite>- Master Chief</cite>
+        </section>
 
         <article>
-            <div>
-                <img src="beluga-icon.jpg" alt="" width="100px">
-            </div>
-            <!-- form section -->
-            <form action="">
-                <fieldset>
-                    <legend>The Task</legend>
-
-                    <!-- input text section -->
-                    <label for="input-text">This is input text</label>
+            <article>
+                <div>
                     <div>
-                        <input type="text" name="input-text" placeholder="text">
+                        <img src="" alt="">
                     </div>
-                    <!-- end of input text section -->
-
-                    <!-- text area section -->
-                    <label for="text-area">Text Area</label>
+                    <h1>Another Attack!</h1>
+                    <p>Another attack comes from Kaijus, but now they're team up with Godzilla.</p>
+                </div>
+            </article>
+            <article>
+                <div>
                     <div>
-                        <textarea name="text-area" placeholder="this is text area" rows="5" cols="20" id=""></textarea>
+                        <img src="" alt="">
                     </div>
-                    <!-- end of text area section -->
-
-                    <!-- radio button section -->
-                    <label for="radio-button">This is radio button</label>
-                    <div>
-                            <input type="radio" name="radio-button" id=""> Yeah, i know
-                            <input type="radio" name="radio-button" id=""> Oh, wow! I just know
-                    </div>
-                    <!-- end of radio button section -->
-
-                    <!-- checkboxes section -->
-                    <label for="chekcboxes">This is checkboxes</label>
-                    <div>
-                        <input type="checkbox" name="checkboxes" id=""> You can select
-                        <input type="checkbox" name="checkboxes" id=""> Multiple
-                        <input type="checkbox" name="checkboxes" id=""> Choices
-                    </div>
-                    <!-- end of checkboxes section -->
-
-                    <!-- select button section -->
-                    <label for="select-button">This is select button</label>
-                    <div>
-                        <select name="select-button" id="" autofocus>
-                            <option value="">Wow</option>
-                            <option value="" selected>So, cool</option>
-                            <option value="">Man!</option>
-                        </select>
-                    </div>
-                    <!-- end of select button section -->
-
-                    <!-- submit button section -->
-                    <div>
-                        <input type="submit" name="submit" value="submit button">
-                    </div>
-                    <!-- submit button section -->
-                </fieldset>
-            </form>
-            <!-- end of form section -->
+                    <h1>Godzilla Breakup Kaiju</h1>
+                    <p>Seems like Godzilla doesn;t have same vision with Kaiju anymore.</p>
+                </div>
+            </article>
         </article>
     </main>
     <footer>
