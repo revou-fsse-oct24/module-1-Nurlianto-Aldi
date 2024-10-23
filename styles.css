@@ -12,43 +12,49 @@ body {
 /* Template Section */
 .contact-us {
     color: black;
+    background-color: white;
     font-size: 1.1rem;
     font-weight: 200;
     text-transform: uppercase;
+    text-decoration: none;
     padding: 1rem 3em;
+    border: 0;
     margin-top: 1rem;
     letter-spacing: 0.5rem;
+    border-radius: 10px;
 }
 
 .heading-1 {
     font-size: 5rem;
     padding: 0;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
 }
 
 .heading-2 {
     font-size: 2rem;
     padding: 0;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
 }
 .paragraph {
     font-size: 1.5rem;
     font-weight: 100;
     padding: 0;
-    margin: 0.5rem;
+    margin: 0.5rem 0;
 }
 /* End of Template Section */
 
 /* Navigation Section */
 header {
     position: fixed;
+    z-index: 2;
     background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: 5rem;
     padding: 0 4rem;
+    border-bottom: 1px solid black;
     margin: 0;
     top: 0;
 }
@@ -60,9 +66,7 @@ header {
     width: 100%;
     max-width: 1200px;
     padding: 0;
-    border: 0;
     margin: 0;
-    /* background-color: blanchedalmond; */
 }
 
 .nav-bar div {
@@ -70,22 +74,20 @@ header {
     align-items: center;
     justify-content: center;
     padding-right: 8rem;
-    /* background-color: brown; */
 }
 
 .nav-bar ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: aquamarine; */
     gap: 10rem;
 }
 
 .nav-bar ul li {
     list-style: none;
     text-transform: uppercase;
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 1.3rem;
+    font-weight: 350;
     letter-spacing: .2rem;
 }
 
@@ -102,9 +104,9 @@ header {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: 100vh;
     padding: 0 4rem;
-    margin-top: 100px;
+    margin-top: 80px;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(assets/wp1822923-pacific-rim-wallpapers.jpg) no-repeat top;
     background-size: cover;
 }
@@ -208,7 +210,7 @@ header {
     justify-content: center;
     width: 100%;
     padding: 0 4rem;
-    margin: 10rem 0;
+    margin: 0;
 
 }
 
@@ -221,25 +223,29 @@ header {
 }
 
 .serv-desc {
-    height: auto;
-    background-color: bisque;
-    border: 1px solid red;
-}
-
-.serv-desc img {
-    width: 100%;
-    max-width: 900px;
-    height: 100%;
-    max-height: 600px;
-    object-fit: cover;
-    object-position: center 20%;
-    
-}
-
-#services div div div:nth-child(2) {
     position: relative;
     display: flex;
     flex-direction: column;
+    height: auto;
+    margin: 10rem 0;
+}
+
+.serv-desc:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.serv-desc img {
+    width: 720px;
+    height: 480px;
+    object-fit: cover;
+    object-position: center 20%;
+}
+
+.serv-desc div:nth-child(2) {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(assets/360_F_94255289_bLOLo8dVkESH4wP4QNVUg4hWBlcBEEOg.jpg) no-repeat center;
@@ -247,5 +253,77 @@ header {
     width: 100%;
     max-width: 600px;
     height: auto;
-    padding: 2.5rem 4rem 3rem;
+    padding: 2rem 3.5rem 2.5rem;
+    top: 15rem;
+    right: 10rem;
+    border-radius: 10px;
 }
+
+.serv-desc:nth-child(2) div:nth-child(2) {
+    left: 10rem;
+}
+/* End of Services Section */
+
+/* Client Review Section */
+#client-review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 0 4rem;
+    margin: 10rem 0 20rem;
+}
+
+#client-review div {
+    width: 100%;
+    max-width: 1200px;
+}
+
+#client-review blockquote {
+    font-style: italic;
+}
+
+#client-review cite {
+    font-style: normal;
+    font-weight: bolder;
+}
+/* End of Client Review Section */
+
+/* Offering Section */
+#offering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 4rem;
+    margin: 20rem 0 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(assets/360_F_94255289_bLOLo8dVkESH4wP4QNVUg4hWBlcBEEOg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#offering > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    color: white;
+    padding: 3rem 0 4rem;
+}
+
+#offering div div
+
+#offering div:nth-child(1) {
+    width: 100%;
+}
+
+#offering div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+/* End of Offering Section */
+
+/* footer section */
