@@ -22,6 +22,13 @@ body {
     margin-top: 1rem;
     letter-spacing: 0.5rem;
     border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.contact-us:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .heading-1 {
@@ -92,9 +99,26 @@ header {
 }
 
 .nav-bar ul li a {
+    position: relative;
     color: black;
     text-decoration: none;
+    padding-bottom: 0.3rem;
+}
 
+.nav-bar ul li a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: black;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-bar ul li a:hover::after {
+    width: 100%;
+    left: 0;
 }
 /* End of Navigation Section */
 
