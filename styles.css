@@ -327,3 +327,62 @@ header {
 /* End of Offering Section */
 
 /* footer section */
+#footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 0 4rem;
+    margin: 0;
+}
+
+#footer > div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    padding: 2rem 0;
+}
+
+#footer p {
+    text-transform: uppercase;
+    font-weight: 550;
+    padding: 0;
+    margin: 0 0 1rem;
+}
+
+#footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5rem;
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+}
+
+#footer ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+
+footer > div > div:nth-child(4) ul {
+    display: flex;
+    gap: 1rem;
+}
+
+footer > div > div:nth-child(4) ul li a img{
+    width: 1rem;
+    margin-bottom: 1rem;
+    
+}
