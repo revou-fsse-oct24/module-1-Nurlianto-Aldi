@@ -6,7 +6,7 @@
     <meta description="Jaeger Premium Care - Maintenance Services of Jaegers">
     <link rel="icon" type="image/x-icon" href="assets/jaeger-logo.png">
     <link rel="stylesheet" href="styles.css">
-    <title>Jaeger Premium Care</title>
+    <title>Contact Us</title>
 </head>
 <body>
 
@@ -33,33 +33,55 @@
             <form action="">
                 <legend class="heading-2">Contact Us</legend>
                     <fieldset>
-                        <div id="user-name">
+                        
+                        <!-- user name -->
+                        <div class="form-set" id="user-name">
                             <div>
                                 <label for="first-name">First Name</label>
-                                <input type="text" name="first-name">
+                                <input type="text" name="first-name" placeholder="First Name">
                             </div>
                             <div>
                                 <label for="last-name">Last Name</label>
-                                <input type="text" name="last-name">
+                                <input type="text" name="last-name" placeholder="Last Name">
                             </div>
                         </div>
-                        <div id="user-contact">
-                            <label for="user-email">Email Address</label>
-                            <input type="email" name="user-email">
-                            <label for="phone-number">Phone Number</label>
-                            <input type="number" name="phone-number">
+                        <!-- end of user name -->
+
+                        <!-- user email and phone -->
+                        <div class="form-set">
+                            <div class="form-set">
+                                <label for="user-email">Email Address</label>
+                                <input type="email" name="user-email" placeholder="Email Address">
+                            </div>
+                            <div>
+                                <label for="phone-number">Phone Number</label>
+                                <input type="number" name="phone-number" placeholder="Phone Number">
+                            </div>
                         </div>
-                        <div>
-                            <label for="pilot-age">Age</label>
-                            <input type="number" name="pilot-age">
-                            <label for="date-of-birth">Date of Birth</label>
-                            <input type="date" name="date-of-birth">
+                        <!-- end of user email and phone -->
+                        
+                        <!-- pilot age and dob -->
+                        <div class="form-set">
+                            <div>
+                                <label for="pilot-age">Age</label>
+                                <input type="number" name="pilot-age" placeholder="Your Age">
+                            </div>
+                            <div>
+                                <label for="date-of-birth">Date of Birth</label>
+                                <input type="date" name="date-of-birth">
+                            </div>
                         </div>
-                        <div>
+                        <!-- end of pilot age and dob -->
+
+                        <!-- user district -->
+                        <div class="form-set-single">
                             <label for="district">District</label>
-                            <input type="number" name="district">
+                            <input type="number" name="district" placeholder="Which District Are You In?">
                         </div>
-                        <div>
+                        <!-- end of user district -->
+
+                        <!-- Jaeger Type -->
+                        <div class="form-set-single">
                             <label for="jaeger-type">Jaeger Type</label>
                             <select name="kaiju-type" id="">
                                 <option value="" disabled selected>--Select Jaeger Type--</option>
@@ -73,33 +95,57 @@
                                 <option value="">Others</option>
                             </select>
                         </div>
-                        <div>
+                        <!-- end of Jaeger Type -->
+                        
+                        <!-- service choose -->
+                        <div class="form-set-multiple">
                             <label for="service-type">What Kind of Service do You Want?</label>
-                            <input type="radio" name="service-type">Basic Maintenance
-                            <input type="radio" name="service-type">Armor Upgrade
-                            <input type="radio" name="service-type">Booster Upgrade
-                            <input type="radio" name="service-type">Full Maintenance and Upgrade
+                            <ul>
+                                <li><input type="radio" name="service-type" value="Basic Maintenance">Basic Maintenance</li>
+                                <li><input type="radio" name="service-type">Armor Upgrade</li>
+                                <li><input type="radio" name="service-type">Booster Upgrade</li>
+                                <li><input type="radio" name="service-type">Full Maintenance and Upgrade</li>
+                            </ul> 
+                        </div>
+                        <!-- end of service choose -->
 
-                        </div>
-                        <div>
+                        <!-- Type of Kaiju Defeated by User -->
+                        <div class="form-set-multiple">
                             <label for="type-of-kaiju-defetead">Type of Kaiju Defeated</label>
-                            <input type="checkbox" name="kaiju" id="">Godzilla</input>
-                            <input type="checkbox" name="kaiju" id="">Veran</input>
-                            <input type="checkbox" name="kaiju" id="">Space Godzilla</input>
-                            <input type="checkbox" name="kaiju" id="">Supergiant-class Kaiju</input>
-                            <input type="checkbox" name="kaiju" id="">Giant-class Kaiju</input>
-                            <input type="checkbox" name="kaiju" id="">Midsize Kaiju</input>
-                            <input type="checkbox" name="kaiju" id="">Miniature Kaiju</input>
-                            <input type="checkbox" name="kaiju" id="">Others</input>
+                            <div>
+                                <ul>
+                                    <li><input type="checkbox" name="kaiju" id="">Godzilla</input></li>
+                                    <li><input type="checkbox" name="kaiju" id="">Veran</input></li>
+                                    <li><input type="checkbox" name="kaiju" id="">Space Godzilla</input></li>
+                                    <li><input type="checkbox" name="kaiju" id="">Supergiant-class Kaiju</input></li>
+                                </ul>
+                                <ul>
+                                    <li><input type="checkbox" name="kaiju" id="">Giant-class Kaiju</input></li>
+                                    <li><input type="checkbox" name="kaiju" id="">Midsize Kaiju</input></li>
+                                    <li><input type="checkbox" name="kaiju" id="">Miniature Kaiju</input></li>
+                                    <li><input type="checkbox" name="kaiju" id="">Others</input></li>
+                                </ul>
+                            </div>
                         </div>
-                        <div>
+                        <!-- End of Type of Kaiju Defeated by User -->
+
+                        <!-- Kaiju Defeated by User -->
+                        <div class="form-set-single">
                             <label for="kaiju-defeated">Kaiju Defeated</label>
                             <input type="number" name="kaiju-defeated" placeholder="How Many Kaiju has Been Defeated?">
                         </div>
-                        <div>
+                        <!-- End of Kaiju Defeated by User -->
+
+                        <div class="form-set-when">
                             <label for="pickup-date">When Did You Expect To Take The Jaeger That Has Been Maintained</label>
-                            <input type="date" name="pickup-date" id="">
-                            <input type="time" name="pickup-date" id="">
+                            <div>
+                                <div>
+                                    <input type="date" name="pickup-date" id="">
+                                </div>
+                                <div>
+                                    <input type="time" name="pickup-date" id="">
+                                </div>
+                            </div>
                             <p>
                                 Note: this is the estimation
                             </p>
@@ -109,6 +155,29 @@
                         </div>
                     </fieldset>
             </form>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, quidem explicabo, assumenda optio voluptas dolorum ipsa ab pariatur reprehenderit quo ducimus odio labore ad minima hic cum eius est perferendis!</div>
+
+
+            
         </div>
     </section>
 </body>

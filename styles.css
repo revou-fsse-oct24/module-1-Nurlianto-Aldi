@@ -407,72 +407,7 @@ footer > div > div:nth-child(4) ul li a img{
     
 }
 
-/* Page Three Section (CONTACT US) */
-#contact-us-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: auto;
-    padding: 0 4rem;
-    margin-top: 80px;
-}
 
-#contact-us-form > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 1200px;
-}
-
-legend {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-fieldset {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 800px;
-    padding: 2rem 4rem;
-    margin: 0;
-    border-radius: 10px;
-}
-
-fieldset div {
-    margin: 0.7rem 0;
-}
-
-#user-name {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    gap: 1rem;
-}
-
-#user-name div {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    gap: 0.5rem;
-}
-#user-name div input {
-    border-radius: 10px;
-}
-
-#user-contact {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-}
-
-/* End of Page Three Section (CONTACT US) */
 
 
 /* Media Query for Tablet */
@@ -708,3 +643,128 @@ fieldset div {
         gap: 2rem;
     }
 }
+
+/* Page Three Section (CONTACT US) */
+#contact-us-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding: 0 4rem;
+    margin-top: 80px;
+}
+
+#contact-us-form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 800px;
+    padding: 2rem 4rem;
+    margin: 0;
+    border-radius: 10px;
+}
+
+fieldset div {
+    margin: 0.7rem 0;
+}
+
+.form-set {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+
+}
+
+.form-set div {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 0.5rem;
+}
+
+.form-set input {
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-set-single {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.form-set-single input {
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+.form-set-single select {
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+
+.form-set-multiple {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-set-multiple div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10rem;
+    padding: 0;
+    margin: 0;
+}
+
+.form-set-multiple ul {
+    padding: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.form-set-when {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-set-when div {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    gap: 0.5rem;
+    margin: 0.3rem 0;
+}
+
+.form-set-when input {
+    width: 100%;
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+}
+
+/* End of Page Three Section (CONTACT US) */
