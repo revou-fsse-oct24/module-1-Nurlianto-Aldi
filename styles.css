@@ -7,6 +7,7 @@ body {
     padding: 0;
     border: 0;
     margin: 0;
+    /* background-image: url(assets/wp1822923-pacific-rim-wallpapers.jpg); */
 }
 
 /* Template Section */
@@ -23,6 +24,7 @@ body {
     letter-spacing: 0.5rem;
     border-radius: 10px;
     transition: all 0.3s ease;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .contact-us:hover {
@@ -123,6 +125,10 @@ header {
 /* End of Navigation Section */
 
 /* Banner Section */
+main {
+    margin-top: 80px;
+}
+
 #banner {
     display: flex;
     align-items: center;
@@ -130,7 +136,7 @@ header {
     width: 100%;
     height: 100vh;
     padding: 0 4rem;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(assets/wp1822923-pacific-rim-wallpapers.jpg) no-repeat top;
     background-size: cover;
 }
@@ -652,36 +658,43 @@ footer > div > div:nth-child(4) ul li a img{
     width: 100%;
     height: auto;
     padding: 0 4rem;
-    margin-top: 80px;
 }
 
 #contact-us-form > div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
 }
 
-legend {
+/* legend {
     display: flex;
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-}
+} */
 
 fieldset {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 800px;
+    width: 800px;
     padding: 2rem 4rem;
     margin: 0;
     border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.185); /* Warna latar belakang sedikit transparan */
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5rem 0;
+    
 }
 
 fieldset div {
-    margin: 0.7rem 0;
+    margin: 0.5rem 0;
 }
 
 .form-set {
@@ -699,9 +712,15 @@ fieldset div {
     gap: 0.5rem;
 }
 
+.form-set label {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+
 .form-set input {
-    height: 2rem;
+    height: 3rem;
     padding: 0 1rem;
+    border: 1px solid black;
     border-radius: 0.5rem;
 }
 
@@ -712,15 +731,22 @@ fieldset div {
     gap: 0.5rem;
 }
 
+.form-set-single label {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
+}
+
 .form-set-single input {
-    height: 2rem;
+    height: 3rem;
     padding: 0 1rem;
+    border: 1px solid black;
     border-radius: 0.5rem;
 }
 
 .form-set-single select {
-    height: 2rem;
+    height: 3rem;
     padding: 0 1rem;
+    border: 1px solid black;
     border-radius: 0.5rem;
 }
 
@@ -728,6 +754,11 @@ fieldset div {
 .form-set-multiple {
     display: flex;
     flex-direction: column;
+}
+
+.form-set-multiple label {
+    font-size: 1.2rem;
+    padding: 0 0.5rem;
 }
 
 .form-set-multiple div {
@@ -750,6 +781,7 @@ fieldset div {
 .form-set-when {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .form-set-when div {
@@ -762,9 +794,77 @@ fieldset div {
 
 .form-set-when input {
     width: 100%;
-    height: 2rem;
+    height: 3rem;
     padding: 0 1rem;
+    border: 1px solid black;
     border-radius: 0.5rem;
 }
 
+#submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 /* End of Page Three Section (CONTACT US) */
+
+/* page two (SERVICES) */
+/* heading section */
+#heading-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 4rem;
+
+}
+
+#heading-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    border-bottom: 1px solid black ;
+}
+
+#heading-section div p {
+    padding: 0;
+    margin: 0 0 1.5rem;
+
+}
+/* end of heading section */
+
+
+/* services section */
+.services-section-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 4rem;
+    margin: 5rem 0;
+}
+
+.services-section-main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-content: space-between;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.services-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.services-section p {
+    margin-bottom: 2.5rem;
+}
+/* End of page two (SERVICES) */
