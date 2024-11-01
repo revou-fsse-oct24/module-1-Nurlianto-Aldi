@@ -52,6 +52,7 @@ body {
 }
 /* End of Template Section */
 
+/* page one */
 /* Navigation Section */
 header {
     position: fixed;
@@ -412,243 +413,68 @@ footer > div > div:nth-child(4) ul li a img{
     margin-bottom: 1rem;
     
 }
+/* end of page one */
 
+/* page two (SERVICES) */
+/* heading section */
+#heading-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 4rem;
 
-
-
-/* Media Query for Tablet */
-@media (min-width:768px) and (max-width: 991px) {
-    /* Navigation Section */
-    header {
-        padding: 0 7rem;
-    }
-
-    .nav-bar ul {
-        gap: 4rem;
-    }
-    /* End of Navigation Section */
-
-    /* Banner Section */
-    #banner {
-        padding: 0 7rem;
-    }
-
-    #banner div {
-        padding-right: 10rem;
-    }
-    /* End of Banner Section */
-
-    /* Description Section */
-    #description {
-        padding: 0 4rem;
-    }
-    /* End of Banner Section */
-
-    /* Services Section */
-    #services-card {
-        padding: 0 7rem;
-    }
-
-    .cards {
-        max-width: 350px;
-    }
-
-    .cards img {
-        height: 175px;
-    }
-
-    .cards div:nth-child(2) {
-        margin: 1.3rem 0.8rem;
-    }
-
-    .cards div:nth-child(2) a {
-        margin: 0.3rem;
-    }
-    /* End of Service Card Section */
-
-    /* Services Section */
-    #services {
-        padding: 0 7rem;
-    }
-    
-    .serv-desc {
-        margin: 12rem 0;
-    }
-
-    .serv-desc div:nth-child(2) {
-        top: 20rem;
-        right: 0;
-    }
-
-    .serv-desc:nth-child(2) div:nth-child(2) {
-        left: 0rem;
-    }
-    /* End of Services Section */
-
-    /* Client Review Section */
-    #client-review {
-        padding: 0 7rem;
-    }
-    /* End of Client Review Section */
-
-    /* Offering Section */
-    #offering {
-        padding: 0 7rem;
-    }
-
-    #offering div div:nth-child(1) {
-        width: 60%;
-    }
-
-    #offering div div:nth-child(2) {
-        width: 40%;
-    }
-    /* End of Offering Section */
-
-    /* Footer Section */
-    #footer {
-        padding: 0 7rem;
-    }
 }
 
-/* End of Media Query for Tablet */
-
-/* Media Query for Mobile */
-@media (max-width: 767px) {
-    header {
-        height: auto;
-        padding: 0 1rem;
-    }
-
-    .nav-bar {
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .nav-bar div {
-        justify-content: flex-start;
-        padding-right: 0;
-    }
-
-    .nav-bar ul {
-        align-items: flex-end;
-        flex-direction: column;
-        gap: 1rem;
-        padding: 0 1rem;
-    }
-    /* End of Navigation Section */
-    #banner {
-        margin-top: 150px;
-        padding: 0 1rem;
-        height: 80vh;
-    }
-
-    #banner div {
-        padding-right: 0;
-    }
-
-    /* Description Section */
-    #description {
-        padding: 0 1rem;
-    }
-    /* End of Description Section */
-
-    /* Services Card Section */
-    #services-card {
-        padding: 0 1rem;
-    }
-
-    #services-card > div {
-        flex-direction: column;
-        gap: 2rem;
-
-    }
-
-    .serv-desc:nth-child(2) {
-        flex-direction: column;
-    }
-
-    .cards img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        object-position: center 20%;
-    }
-
-    .cards div:nth-child(2) {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        margin: 1rem 1rem;
-    }
-
-    .cards div:nth-child(2) a {
-        margin: 0.2rem;
-    }
-    /* End of Services Card Section */
-
-    /* Services Section */
-    #services {
-        padding: 0 1rem;
-        margin-top: 10rem;
-    }
-
-    .serv-desc {
-        margin: 1rem 0;
-    }
-
-    .serv-desc img {
-        width: 100%;
-        max-width: 768px;
-        height: 100%;
-    }
-
-    .serv-desc div:nth-child(2) {
-        position: relative;
-        top: 0;
-        right: 0;
-    }
-
-    .serv-desc:nth-child(2) div:nth-child(2) {
-        left: 0rem;
-    }
-    /* End of Services Section */
-
-    /* Client Review Section */
-    #client-review {
-        padding: 0 1rem;
-        margin: 10rem 0;
-
-    }
-    /* End of Client Review Section */
-
-    /* Offering Section */
-    #offering {
-        padding: 0 1rem;
-        margin: 0;
-    }
-
-    #offering > div > div:nth-of-type(1){
-        text-align: center;
-    }
-
-    #offering > div {
-        flex-direction: column;
-    }
-
-    #offering div div:nth-child(2) {
-        width: 100%;
-    }
-    /* End of Offering Section */
-
-    /* Footer Section */
-    #footer > div {
-        flex-direction: column;
-        gap: 2rem;
-    }
+#heading-section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    border-bottom: 1px solid black ;
 }
+
+#heading-section div p {
+    padding: 0;
+    margin: 0 0 1.5rem;
+
+}
+/* end of heading section */
+
+
+/* services section */
+.services-section-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 4rem;
+    margin: 5rem 0;
+}
+
+.services-section-main > div {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-content: space-between;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.services-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.services-section p {
+    margin-bottom: 2.5rem;
+}
+/* End of page two (SERVICES) */
 
 /* Page Three Section (CONTACT US) */
 #contact-us-form {
@@ -808,63 +634,181 @@ fieldset div {
 }
 /* End of Page Three Section (CONTACT US) */
 
-/* page two (SERVICES) */
-/* heading section */
-#heading-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0 4rem;
+/* Media Query */
+/* media query for mobile */
+@media (max-width:768px) {
+    /* page one (HOME) */
+    /* navigation section */
+    
+    main {
+        margin-top: 146.775px;
+    }
 
+    header {
+        height: auto;
+        padding: 0 2rem;
+
+    }
+
+    .nav-bar {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav-bar div {
+        justify-content: flex-start;
+    }
+
+    .nav-bar ul {
+        align-items: flex-end;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    /* end of navigation section */
+
+    /* banner section */
+    #banner {
+        margin-top: ;
+        padding: 0 2rem;
+        height: 80vh;
+    }
+
+    #banner div {
+        padding-right: 0;
+    }
+
+    /* Description Section */
+    #description {
+        padding: 0 2rem;
+    }
+    /* End of Description Section */
+
+    /* Services Card Section */
+    #services-card {
+        padding: 0 2rem;
+    }
+
+    #services-card > div {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .cards img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: center 20%;
+    }
+
+    .cards div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: 1rem 1rem;
+    }
+
+    .cards div:nth-child(2) a {
+        margin: 0.2rem;
+    }
+    /* End of Services Card Section */
+
+    /* Services Section */
+    #services {
+        padding: 0 1rem;
+        margin-top: 5rem;
+    ]}
+
+    .serv-desc {
+        width: 100%;
+        margin: 1rem 0;
+        align-items: center;
+        margin: 5rem 0;
+    }
+
+    .serv-desc:nth-child(2) {
+        
+    }
+
+    .serv-desc div:nth-child(2) {
+        top: 15rem;
+        right: auto;
+    }
+
+    .serv-desc img {
+        width: 100%;
+        max-width: 768px;
+        height: 100%;
+    }
+
+    .serv-desc:nth-child(2) div:nth-child(2) {
+        left: 5rem;
+    }
+    /* End of Services Section */
+
+    /* Client Review Section */
+    #client-review {
+        padding: 0 1rem;
+        margin: 10rem 0;
+
+    }
+    /* End of Client Review Section */
+
+    /* Offering Section */
+    #offering {
+        padding: 0 1rem;
+        margin: 0;
+    }
+
+    #offering > div > div:nth-of-type(1){
+        text-align: center;
+    }
+
+    #offering > div {
+        flex-direction: column;
+    }
+
+    #offering div div:nth-child(2) {
+        width: 100%;
+    }
+    /* End of Offering Section */
+
+    /* Footer Section */
+    #footer > div {
+        flex-direction: ;
+        gap: 2rem;
+    }
+    /* end of page one (HOME) */
+
+    /* page two (SERVICES) */
+    #heading-section {
+        padding: 0 4rem 0 2rem;
+    }
+
+    #heading-section div {
+        align-items: flex-start;
+    }
+
+    .services-section-main {
+        padding: 0 2rem;
+    }
+
+    .services-section-main > div {
+        gap: 5rem;
+    }
+
+    .services-section {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid black;
+    }
+    /* end of page two (SERVICES) */
+
+    /* page three (CONTACT US) */
+    fieldset {
+        width: 600px;
+    /* end of page three (CONTACT US) */
 }
-
-#heading-section div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-    border-bottom: 1px solid black ;
-}
-
-#heading-section div p {
-    padding: 0;
-    margin: 0 0 1.5rem;
-
-}
-/* end of heading section */
-
-
-/* services section */
-.services-section-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    padding: 0 4rem;
-    margin: 5rem 0;
-}
-
-.services-section-main > div {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-content: space-between;
-    justify-content: center;
-    width: 100%;
-    max-width: 1200px;
-}
-
-.services-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-}
-
-.services-section p {
-    margin-bottom: 2.5rem;
-}
-/* End of page two (SERVICES) */
