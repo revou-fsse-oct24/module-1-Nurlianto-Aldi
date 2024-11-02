@@ -45,4 +45,4 @@ This is a checkpoint to see if i already success in push to Github
 
 #Update With Final Checkpoint
 i update the website further more. I add 3 pages and add CSS to it including media query for mobile.
-[Here is the lini]([https://nurlianto-aldi.github.io/module-1-assignment-Nurlianto-Aldi/](https://revou-fsse-oct24.github.io/module-1-Nurlianto-Aldi/))
+[Here is the link]((https://revou-fsse-oct24.github.io/module-1-Nurlianto-Aldi/)
